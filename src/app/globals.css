@@ -2,32 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* Set color of the underline */
+  transition: transform 0.4s ease;
+  transform-origin: bottom right; /* Set the origin point for transformation */
+  transform: scaleX(0); /* Initially, set the underline to be hidden */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.underline-animation:hover::after {
+  transition: transform 0.4s ease;
+  transform-origin: bottom left;
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity set to 0 */
+  }
+  to {
+    opacity: 1; /* End with opacity set to 1 */
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.fade-in {
+  animation: fadeIn 0.5s ease forwards; /* Apply the fadeIn animation */
 }
