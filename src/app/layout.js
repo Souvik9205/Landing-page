@@ -1,3 +1,4 @@
+import Footer from "./(components)/Footer";
 import Nav from "./(components)/Navbar";
 import "./globals.css";
 import Providers from "./provider";
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Nav />
           <div className="md:px-14 px-2 py-8">{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>

@@ -17,11 +17,11 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    { label: "Products", href: "#" },
+    { label: "Products", href: "/products" },
     { label: "Solutions", href: "#" },
     { label: "Careers", href: "#" },
     { label: "Case Studies", href: "#" },
-    { label: "About Us", href: "#" },
+    { label: "About Us", href: "/about-us" },
     { label: "Contact Us", href: "#" },
   ];
 
@@ -45,7 +45,11 @@ export default function Nav() {
 
       <NavbarContent className="hidden lg:flex gap-5" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#" className="underline-animation">
+          <Link
+            color="foreground"
+            href="/products"
+            className="underline-animation"
+          >
             <p className="text-base cursor-pointer text-gray-900 font-medium">
               Products
             </p>
@@ -73,7 +77,11 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className="underline-animation">
+          <Link
+            color="foreground"
+            href="/about-us"
+            className="underline-animation"
+          >
             <p className="text-base cursor-pointer text-gray-900 font-medium">
               About Us
             </p>

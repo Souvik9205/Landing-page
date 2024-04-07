@@ -3,6 +3,7 @@ import LogoSmall from "./(footer components)/Logo-small";
 import Instagram from "./(footer components)/instaLogo";
 import LinkedIn from "./(footer components)/linkedInLogo";
 import Facebook from "./(footer components)/facebookLogo";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -42,18 +43,29 @@ function Footer() {
             </p>
           </div>
           <div className="sm:w-1/6">
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Terms & Conditions
-            </p>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Privacy Policy
-            </p>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Cookie Policy
-            </p>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Contact Us
-            </p>
+            <Link href="/terms-and-conditions">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Terms & Conditions
+              </p>
+            </Link>
+
+            <Link href="#">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Privacy Policy
+              </p>
+            </Link>
+
+            <Link href="#">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Cookie Policy
+              </p>
+            </Link>
+
+            <Link href="#">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Contact Us
+              </p>
+            </Link>
           </div>
         </div>
       </div>
