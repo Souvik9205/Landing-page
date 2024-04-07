@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body className="flex flex-col">
         <Providers>
           <Nav />
-          <div className="md:px-14 px-2 py-8">{children}</div>
+          <div>{children}</div>
           <Footer />
         </Providers>
       </body>

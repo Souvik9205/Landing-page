@@ -26,9 +26,11 @@ function Footer() {
             </div>
           </div>
           <div className="sm:w-1/6">
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Products
-            </p>
+            <Link href="/products">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Products
+              </p>
+            </Link>
             <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
               Solutions
             </p>
