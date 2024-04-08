@@ -17,7 +17,7 @@ function page() {
       </div>
       <div>
         <h1 className="text-5xl font-medium py-10">
-          We're always looking for people who want to make real
+          We&apos;re always looking for people who want to make real
           <span className="text-red-500"> impact.</span>
         </h1>
         <p className="text-lg pt-5 pb-3">
@@ -31,7 +31,7 @@ function page() {
           doing it.
         </p>
         <p className="text-lg py-3 pb-10">
-          Do you think we may be a good fit? Get in touch with us through
+          Do you think we may be a good fit? Get in touch with us through{" "}
           <span className="text-red-500 underline"> careers@pericius.com</span>
         </p>
 
