@@ -17,7 +17,7 @@ function page() {
       </div>
       <div>
         <h1 className="text-5xl font-medium py-10">
-          We're always looking for people who want to make real
+          We&apos;re always looking for people who want to make real
           <span className="text-red-500"> impact.</span>
         </h1>
         <p className="text-lg pt-5 pb-3">
