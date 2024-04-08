@@ -7,7 +7,7 @@ function page() {
       <div className="flex w-full ">
         <div className="w-2 sm:w-1/2 flex items-center">
           <h1 className="text-medium sm:text-4xl lg:text-6xl font-medium pl-10 md:pl-36 ">
-            Let's
+            Let&apos;s
             <span className="text-red-500"> make great things happen!</span>
           </h1>
         </div>
