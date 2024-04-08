@@ -1,28 +1,16 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@nextui-org/react";
 import Instagram from "../(components)/(footer components)/instaLogo";
 import LinkedIn from "../(components)/(footer components)/linkedInLogo";
 import Facebook from "../(components)/(footer components)/facebookLogo";
 
 function page() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log({ firstName, lastName, email, subject, message });
-  };
-
   return (
     <div className="sm:px-20 lg:mx-40">
       <h1 className="text-6xl text-red-500 font-medium">Contact Us</h1>
       <div className="flex sm:flex-row flex-col py-10">
         <div className="w-full sm:w-2/3 p-3">
-          <form onSubmit={handleSubmit}>
+          <form>
             <div>
               <h1 className="text-xl">
                 Name <span className="text-gray-500">(required)</span>
@@ -32,8 +20,6 @@ function page() {
                   <label className="block mb-2 text-lg pt-2">First Name</label>
                   <input
                     type="text"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
                     required
                     className="border border-gray-500 p-2 w-full"
                   />
@@ -42,8 +28,6 @@ function page() {
                   <label className="block mb-2 text-lg pt-2">Last Name</label>
                   <input
                     type="text"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
                     required
                     className="border border-gray-500 p-2 w-full"
                   />
@@ -58,8 +42,6 @@ function page() {
               </label>
               <input
                 type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
                 required
                 className="border border-gray-500 p-2 w-full"
               />
@@ -72,8 +54,6 @@ function page() {
               </label>
               <input
                 type="text"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
                 required
                 className="border border-gray-500 p-2 w-full"
               />
@@ -85,8 +65,6 @@ function page() {
                 </h1>
               </label>
               <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
                 required
                 className="border border-gray-500 p-2 w-full"
               ></textarea>
