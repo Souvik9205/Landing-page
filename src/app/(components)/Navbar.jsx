@@ -78,7 +78,11 @@ export default function Nav() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className="underline-animation">
+          <Link
+            color="foreground"
+            href="/case-studies"
+            className="underline-animation"
+          >
             <p className="text-base cursor-pointer text-gray-900 font-medium">
               Case Studies
             </p>
