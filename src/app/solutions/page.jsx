@@ -6,7 +6,7 @@ import Sol4 from "../(components)/(core components)/solution4";
 
 function page() {
   return (
-    <div className="p-5 sm:px-32 md:mx-36">
+    <div className="p-2 lg:px-32 lg:mx-36">
       <div className="w-full text-center justify-center items center">
         <h1 className="text-5xl p-3">
           <span className="text-red-600">Innovative</span> Solutions
@@ -15,8 +15,8 @@ function page() {
           Ground breaking solutions across multiple sectors
         </p>
       </div>
-      <div className="flex gap-10 py-16 ">
-        <div className="px-20">
+      <div className="flex sm:flex-row flex-col gap-10 py-16 ">
+        <div className="px-10 lg:px-20 sm:w-1/2">
           <Sol1 />
           <h2 className="text-3xl text-red-500 p-2 pt-10">Payment Solutions</h2>
           <p>
@@ -26,7 +26,7 @@ function page() {
             points.
           </p>
         </div>
-        <div className="px-20">
+        <div className="px-10 lg:px-20 sm:w-1/2">
           <Sol2 />
           <h2 className="text-3xl text-red-500 p-2 pt-10">
             Telecommunications
@@ -37,8 +37,8 @@ function page() {
           </p>
         </div>
       </div>
-      <div className="flex gap-10 py-16">
-        <div className="px-20">
+      <div className="flex sm:flex-row flex-col gap-10 py-16">
+        <div className="px-10 lg:px-20 sm:w-1/2">
           <Sol3 />
           <h2 className="text-3xl text-red-500 p-2 pt-10">
             Treasury Management
@@ -49,7 +49,7 @@ function page() {
             their cash flows, P & L and Business Accounts Management in general.
           </p>
         </div>
-        <div className="px-20">
+        <div className="px-10 lg:px-20 sm:w-1/2">
           <Sol4 />
           <h2 className="text-3xl text-red-500 p-2 pt-10">Insurance</h2>
           <p>

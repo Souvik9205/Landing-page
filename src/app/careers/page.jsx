@@ -3,7 +3,7 @@ import CBanner from "../(components)/(body components)/careerBanner";
 
 function page() {
   return (
-    <div className="px-48 m-10">
+    <div className="lg:px-48 lg:m-10 p-5">
       <div className="flex w-full ">
         <div className="w-2 sm:w-1/2 flex items-center">
           <h1 className="text-medium sm:text-4xl lg:text-6xl font-medium pl-10 md:pl-36 ">
