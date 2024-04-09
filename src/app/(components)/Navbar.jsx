@@ -18,11 +18,11 @@ export default function Nav() {
 
   const menuItems = [
     { label: "Products", href: "/products" },
-    { label: "Solutions", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Case Studies", href: "#" },
+    { label: "Solutions", href: "/solutions" },
+    { label: "Careers", href: "/careers" },
+    { label: "Case Studies", href: "/case-studies" },
     { label: "About Us", href: "/about-us" },
-    { label: "Contact Us", href: "#" },
+    { label: "Contact Us", href: "/contact-us" },
   ];
 
   return (

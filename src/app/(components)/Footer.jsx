@@ -14,13 +14,13 @@ function Footer() {
             <LogoSmall />
             <p className="text-gray-700 text-lg">info@pericius.com</p>
             <div className="flex w-full gap-3">
-              <a href="#">
+              <a href="#" target="_blank">
                 <Instagram />
               </a>
-              <a href="#">
+              <a href="#" target="_blank">
                 <LinkedIn />
               </a>
-              <a href="#">
+              <a href="#" target="_blank">
                 <Facebook />
               </a>
             </div>
@@ -31,18 +31,26 @@ function Footer() {
                 Products
               </p>
             </Link>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Solutions
-            </p>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              About Us
-            </p>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Careers
-            </p>
-            <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
-              Case Studies
-            </p>
+            <Link href="/solutions">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Solutions
+              </p>
+            </Link>
+            <Link href="/about-us">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                About Us
+              </p>
+            </Link>
+            <Link href="/careers">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Careers
+              </p>
+            </Link>
+            <Link href="/case-studies">
+              <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
+                Case Studies
+              </p>
+            </Link>
           </div>
           <div className="sm:w-1/6">
             <Link href="/terms-and-conditions">
@@ -63,7 +71,7 @@ function Footer() {
               </p>
             </Link>
 
-            <Link href="#">
+            <Link href="/contact-us">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Contact Us
               </p>

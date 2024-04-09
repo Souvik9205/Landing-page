@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Study1 from "../(components)/(body components)/study1";
 import { Button } from "@nextui-org/react";
 import Study3 from "../(components)/(body components)/study3";
@@ -23,7 +24,9 @@ function page() {
             digital transformation of their business model and triggered 60%
             growth.
           </p>
-          <Button color="danger">View Case Study</Button>
+          <Button color="danger">
+            <Link href="/case-study-1">View Case Study</Link>
+          </Button>
         </div>
       </div>
       <div className="flex flex-col-reverse sm:flex-row lg:px-20 lg:mx-44 pb-14 gap-8">
@@ -36,7 +39,9 @@ function page() {
             largest telecom operators to provide a natural extension of its
             platform that is integrated with a digital banking platform.
           </p>
-          <Button color="danger">View Case Study</Button>
+          <Button color="danger">
+            <Link href="/case-study-2">View Case Study</Link>
+          </Button>
         </div>
         <div className="w-full sm:w-2/3">
           <Study2 />
@@ -56,7 +61,9 @@ function page() {
             tune the proposed regulations under the existing regulatory
             frameworks.
           </p>
-          <Button color="danger">View Case Study</Button>
+          <Button color="danger">
+            <Link href="/case-study-3">View Case Study</Link>
+          </Button>
         </div>
       </div>
     </div>
