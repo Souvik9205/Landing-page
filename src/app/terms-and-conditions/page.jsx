@@ -300,12 +300,12 @@ function page() {
           information, names, images, pictures, logos and icons relating to this
           site or any other sites owned or operated by PERICIUS, and/or any of
           its associated companies, products and services (or to third party
-          products and services), is provided "AS IS" and on an &quot;AS
-          AVAILABLE&quot; basis without any representation or endorsement being
-          made and without warranty of any kind, including but not limited to
-          the implied warranties of satisfactory quality, fitness for a
-          particular purpose, non-infringement, compatibility, security and
-          accuracy.
+          products and services), is provided &quot;AS IS&quot; and on an
+          &quot;AS AVAILABLE&quot; basis without any representation or
+          endorsement being made and without warranty of any kind, including but
+          not limited to the implied warranties of satisfactory quality, fitness
+          for a particular purpose, non-infringement, compatibility, security
+          and accuracy.
         </p>
         <p className="text-lg py-2 px-3">
           <span className="font-bold text-lg">7.4.</span>The information and
@@ -421,7 +421,7 @@ function page() {
           issued by PERICIUS contains the entire understanding between the
           Parties, superseding all prior communications, agreements, and
           understandings between the Parties with respect to the purpose of
-          these Terms and Conditions.
+          these Terms and Conditions."
         </p>
       </div>
     </div>
