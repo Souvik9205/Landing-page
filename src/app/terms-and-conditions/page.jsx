@@ -421,7 +421,7 @@ function page() {
           issued by PERICIUS contains the entire understanding between the
           Parties, superseding all prior communications, agreements, and
           understandings between the Parties with respect to the purpose of
-          these Terms and Conditions."
+          these Terms and Conditions.
         </p>
       </div>
     </div>
