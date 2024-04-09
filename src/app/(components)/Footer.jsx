@@ -51,13 +51,13 @@ function Footer() {
               </p>
             </Link>
 
-            <Link href="#">
+            <Link href="/privacy-policy">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Privacy Policy
               </p>
             </Link>
 
-            <Link href="#">
+            <Link href="/cookie-policy">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Cookie Policy
               </p>
