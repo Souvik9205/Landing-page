@@ -5,7 +5,7 @@ import Image2 from "./(body components)/image2";
 function Body() {
   return (
     <div className="px-0 md:px-5">
-      <div className="flex flex-col-reverse md:flex-row pb-20 md:pt-8 pt-2 fade-in">
+      <div className="flex flex-col-reverse md:flex-row pb-20 md:pt-8 pt-2 ">
         <div className="md:w-2/5 flex flex-col gap-4 justify-center items-center p-10">
           <h1 className="text-5xl lg:text-6xl font-medium font-mono">
             Disruptive Solutions
@@ -19,7 +19,7 @@ function Body() {
           <Image1 />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row py-0 md:py-20 fade-in">
+      <div className="flex flex-col md:flex-row py-0 md:py-20 ">
         <div className="md:w-1/2 ">
           <Image2 />
         </div>

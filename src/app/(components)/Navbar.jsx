@@ -12,8 +12,11 @@ import {
   Button,
 } from "@nextui-org/react";
 import Logo from "./(navbar component)/Logo";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
+  const path = usePathname();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -44,84 +47,52 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarContent className="hidden lg:flex gap-5" justify="center">
-        <NavbarItem>
-          <Link
-            color="foreground"
-            href="/products"
-            className="underline-animation"
-          >
-            <p className="text-base cursor-pointer text-gray-900 font-medium">
-              Products
-            </p>
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            color="foreground"
-            href="/solutions"
-            className="underline-animation"
-          >
-            <p className="text-base cursor-pointer text-gray-900 font-medium">
-              Solutions
-            </p>
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            color="foreground"
-            href="/careers"
-            className="underline-animation"
-          >
-            <p className="text-base cursor-pointer text-gray-900 font-medium">
-              Careers
-            </p>
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            color="foreground"
-            href="/case-studies"
-            className="underline-animation"
-          >
-            <p className="text-base cursor-pointer text-gray-900 font-medium">
-              Case Studies
-            </p>
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            color="foreground"
-            href="/about-us"
-            className="underline-animation"
-          >
-            <p className="text-base cursor-pointer text-gray-900 font-medium">
-              About Us
-            </p>
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            color="foreground"
-            href="/contact-us"
-            className="underline-animation"
-          >
-            <p className="text-base cursor-pointer text-gray-900 font-medium ">
-              Contact Us
-            </p>
-          </Link>
-        </NavbarItem>
+        {menuItems.map((menuItem, index) => (
+          <NavbarItem key={index}>
+            <motion.div
+              whileHover={{
+                scale: 1.06,
+              }}
+            >
+              <Link
+                color="foreground"
+                href={menuItem.href}
+                className={`${
+                  menuItem.href === path ? "underlined" : "underline-animation"
+                }`}
+              >
+                <p className="text-base cursor-pointer text-gray-900 font-medium">
+                  {menuItem.label}
+                </p>
+              </Link>
+            </motion.div>
+          </NavbarItem>
+        ))}
       </NavbarContent>
+
       <NavbarMenu className="p-20">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.label}-${index}`}>
-            <Link
-              color="foreground"
-              className="w-full"
-              href={item.href}
-              size="lg"
+            <motion.div
+              whileHover={{
+                scale: 1.05,
+              }}
             >
-              <p className="underline-animation">{item.label}</p>
-            </Link>
+              <Link
+                color="foreground"
+                className={`${
+                  item.href === path
+                    ? "underlined text-medium"
+                    : "underline-animation"
+                } w-full`}
+                href={item.href}
+                size="lg"
+              >
+                <p className="text-base cursor-pointer text-gray-900 font-medium">
+                  {item.label}
+                </p>
+              </Link>
+            </motion.div>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

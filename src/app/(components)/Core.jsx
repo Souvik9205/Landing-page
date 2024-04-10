@@ -6,7 +6,7 @@ import Core4 from "./(core components)/core4";
 
 function Core() {
   return (
-    <div className="fade-in">
+    <div>
       <div className="flex flex-col justify-center items-center p-5">
         <h1 className="text-4xl md:text-6xl  font-semibold p-10">
           Core Expertise

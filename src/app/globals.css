@@ -21,14 +21,15 @@
   transform: scaleX(1); /* Scale the underline to full width on hover */
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Start with opacity set to 0 */
-  }
-  to {
-    opacity: 1; /* End with opacity set to 1 */
-  }
-}
-.fade-in {
-  animation: fadeIn 0.5s ease forwards; /* Apply the fadeIn animation */
+.underlined::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* Set color of the underline */
+  transition: none; /* Disable transition for static underline */
+  transform-origin: bottom right; /* Set the origin point for transformation */
+  transform: scaleX(1); /* Scale the underline to full width */
 }

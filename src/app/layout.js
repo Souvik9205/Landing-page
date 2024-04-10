@@ -2,6 +2,7 @@ import Footer from "./(components)/Footer";
 import Nav from "./(components)/Navbar";
 import "./globals.css";
 import Providers from "./provider";
+import Animation from "./animation";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,9 +13,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="flex flex-col">
         <Providers>
-          <Nav />
-          <div>{children}</div>
-          <Footer />
+          <Animation>
+            <Nav />
+            <div>{children}</div>
+            <Footer />
+          </Animation>
         </Providers>
       </body>
     </html>
