@@ -26,27 +26,27 @@ function Footer() {
             </div>
           </div>
           <div className="sm:w-1/6">
-            <Link href="/products">
+            <Link href="/products" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Products
               </p>
             </Link>
-            <Link href="/solutions">
+            <Link href="/solutions" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Solutions
               </p>
             </Link>
-            <Link href="/about-us">
+            <Link href="/about-us" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 About Us
               </p>
             </Link>
-            <Link href="/careers">
+            <Link href="/careers" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Careers
               </p>
             </Link>
-            <Link href="/case-studies">
+            <Link href="/case-studies" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Case Studies
               </p>
@@ -71,7 +71,7 @@ function Footer() {
               </p>
             </Link>
 
-            <Link href="/contact-us">
+            <Link href="/contact-us" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Contact Us
               </p>
