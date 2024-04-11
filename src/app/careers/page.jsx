@@ -1,16 +1,12 @@
 import React from "react";
 import CBanner from "../(components)/(body components)/careerBanner";
+import CareerHead from "./(career head)";
 
 function page() {
   return (
     <div className="lg:px-48 lg:m-10 p-5">
       <div className="flex w-full ">
-        <div className="w-2 sm:w-1/2 flex items-center">
-          <h1 className="text-medium sm:text-4xl lg:text-6xl font-medium pl-10 md:pl-36 ">
-            Let&apos;s
-            <span className="text-red-500"> make great things happen!</span>
-          </h1>
-        </div>
+        <CareerHead />
         <div className="w-full sm:w-1/2">
           <CBanner />
         </div>
