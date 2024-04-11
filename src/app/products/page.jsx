@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import { motion } from "framer-motion";
 import Product1 from "../(components)/(body components)/product1";
 import Product2 from "../(components)/(body components)/product2";
 import Product3 from "../(components)/(body components)/product3";
@@ -10,43 +8,12 @@ import Product6 from "../(components)/(body components)/product6";
 import Product7 from "../(components)/(body components)/product7";
 import Product8 from "../(components)/(body components)/product8";
 
-const variants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-};
-const components = {
-  hidden: {
-    opacity: 0,
-    y: 30,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1.5,
-    },
-  },
-};
-
 function page() {
   return (
     <div className="md:px-14 px-2 py-8">
       <div className="px-0 lg:px-28">
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate="show"
-          className="lg:mx-28"
-        >
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:pb-20  pb-8 sm:pb-0"
-          >
+        <div className="lg:mx-28">
+          <div className="flex flex-col md:flex-row py-0 md:pb-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 w-full flex flex-col gap-4 justify-center items-center p-10">
               <h1 className="text-5xl lg:text-6xl font-medium font-mono text-right">
                 Workflow Management
@@ -60,12 +27,9 @@ function page() {
             <div className="md:w-1/2 ">
               <Product1 />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 ">
               <Product2 />
             </div>
@@ -79,12 +43,9 @@ function page() {
                 hierarchy, closures and various other aspects of Sales.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 w-full flex flex-col gap-4 justify-center items-center p-10">
               <h1 className="text-5xl lg:text-6xl font-medium font-mono text-right">
                 Digital Partner Relationship Management
@@ -98,12 +59,9 @@ function page() {
             <div className="md:w-1/2 ">
               <Product3 />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 ">
               <Product4 />
             </div>
@@ -117,12 +75,9 @@ function page() {
                 payments, savings account etc.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 w-full flex flex-col gap-4 justify-center items-center p-10">
               <h1 className="text-5xl lg:text-6xl font-medium font-mono text-right">
                 Contracts Management
@@ -137,12 +92,9 @@ function page() {
             <div className="md:w-1/2 ">
               <Product5 />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 ">
               <Product6 />
             </div>
@@ -157,12 +109,9 @@ function page() {
                 and decision making on action items for all customers
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 w-full flex flex-col gap-4 justify-center items-center p-10">
               <h1 className="text-5xl lg:text-6xl font-medium font-mono text-right">
                 Digital Stock Management
@@ -175,12 +124,9 @@ function page() {
             <div className="md:w-1/2 ">
               <Product7 />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={components}
-            className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0"
-          >
+          <div className="flex flex-col md:flex-row py-0 md:py-20  pb-8 sm:pb-0">
             <div className="md:w-1/2 ">
               <Product8 />
             </div>
@@ -196,8 +142,8 @@ function page() {
                 finally closing the deal
               </p>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );

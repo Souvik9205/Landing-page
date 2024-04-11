@@ -52,6 +52,7 @@ export default function Nav() {
             <motion.div
               whileHover={{
                 scale: 1.06,
+                transition: { ease: "linear" },
               }}
             >
               <Link
@@ -76,6 +77,7 @@ export default function Nav() {
             <motion.div
               whileHover={{
                 scale: 1.05,
+                transition: { ease: "linear" },
               }}
             >
               <Link
