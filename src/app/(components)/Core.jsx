@@ -8,9 +8,15 @@ import Core4 from "./(core components)/core4";
 
 function Core() {
   const ref = useRef(null);
-  const component = useRef(null);
+  const component1 = useRef(null);
+  const component2 = useRef(null);
+  const component3 = useRef(null);
+  const component4 = useRef(null);
   const isInView = useInView(ref);
-  const isCompInView = useInView(component);
+  const isComp1InView = useInView(component1);
+  const isComp2InView = useInView(component2);
+  const isComp3InView = useInView(component3);
+  const isComp4InView = useInView(component4);
   const mainControls = useAnimation();
   const compControls = useAnimation();
 
@@ -18,10 +24,19 @@ function Core() {
     if (isInView) {
       mainControls.start("visible");
     }
-    if (isCompInView) {
+    if (isComp1InView) {
       compControls.start("visible");
     }
-  }, [isCompInView, isInView]);
+    if (isComp2InView) {
+      compControls.start("visible");
+    }
+    if (isComp3InView) {
+      compControls.start("visible");
+    }
+    if (isComp4InView) {
+      compControls.start("visible");
+    }
+  }, [isComp1InView, isComp2InView, isComp3InView, isComp4InView, isInView]);
   return (
     <div>
       <div className="flex flex-col justify-center items-center p-5">
@@ -40,12 +55,13 @@ function Core() {
         </motion.p>
         <div className="flex gap-5 flex-col md:flex-row text-center justify-center p-10">
           <motion.div
+            ref={component1}
             variants={{
               hidden: { opacity: 0.2, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={mainControls}
+            animate={compControls}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
             className="flex flex-col gap-5 md:gap-8"
           >
@@ -58,12 +74,13 @@ function Core() {
             </p>
           </motion.div>
           <motion.div
+            ref={component2}
             variants={{
               hidden: { opacity: 0.2, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={mainControls}
+            animate={compControls}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
             className="flex flex-col gap-5 md:gap-8"
           >
@@ -76,12 +93,13 @@ function Core() {
             </p>
           </motion.div>
           <motion.div
+            ref={component3}
             variants={{
               hidden: { opacity: 0.2, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={mainControls}
+            animate={compControls}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
             className="flex flex-col gap-5 md:gap-8"
           >
@@ -94,13 +112,13 @@ function Core() {
             </p>
           </motion.div>
           <motion.div
-            ref={component}
+            ref={component4}
             variants={{
               hidden: { opacity: 0.2, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
             initial="hidden"
-            animate={mainControls}
+            animate={compControls}
             transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
             className="flex flex-col gap-5 md:gap-8"
           >

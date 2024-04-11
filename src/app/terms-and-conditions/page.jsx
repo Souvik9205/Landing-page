@@ -1,12 +1,11 @@
 import React from "react";
+import TermsHead from "./(terms children)";
 
 function page() {
   return (
     <div className="p-5 sm:p-10 lg:px-36 lg:mx-20">
       <div>
-        <h1 className="text-4xl sm:text-6xl text-center font-medium sm:px-3 pb-8">
-          WEBSITE TERMS AND CONDITIONS
-        </h1>
+        <TermsHead />
         <p className="text-lg px-3 pb-4">
           This website https://www.pericius.com/ is owned and operated by
           Pericius Technologies Private Limited (&quot;

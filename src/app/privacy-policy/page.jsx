@@ -1,12 +1,11 @@
 import React from "react";
+import PrivacyHead from "./(privacy children)";
 
 function page() {
   return (
     <div className="p-5 sm:p-10 lg:px-36 lg:mx-20">
       <div className="pb-3">
-        <h1 className="text-4xl sm:text-6xl text-center font-medium sm:px-3 pb-8">
-          PRIVACY POLICY
-        </h1>
+        <PrivacyHead />
       </div>
 
       <div>

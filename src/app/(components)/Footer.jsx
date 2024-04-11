@@ -53,19 +53,19 @@ function Footer() {
             </Link>
           </div>
           <div className="sm:w-1/6">
-            <Link href="/terms-and-conditions">
+            <Link href="/terms-and-conditions" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Terms & Conditions
               </p>
             </Link>
 
-            <Link href="/privacy-policy">
+            <Link href="/privacy-policy" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Privacy Policy
               </p>
             </Link>
 
-            <Link href="/cookie-policy">
+            <Link href="/cookie-policy" target="_blank">
               <p className="text-red-600 text-lg underline underline-offset-2 hover:text-black hover:font-medium hover:underline-offset-4 hover:cursor-pointer">
                 Cookie Policy
               </p>
