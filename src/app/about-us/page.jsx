@@ -9,8 +9,8 @@ import About5 from "../(components)/(core components)/about5";
 function page() {
   return (
     <div>
-      <div className="flex w-full bg-red-500">
-        <div className="w-2 sm:w-1/3 flex items-center">
+      <div className="flex w-full bg-red-500 ">
+        <div className="w-2 sm:w-1/3 flex items-center p-1">
           <h1 className="text-medium sm:text-4xl lg:text-6xl font-medium pl-10 md:pl-36 ">
             We’re all about collective
           </h1>
